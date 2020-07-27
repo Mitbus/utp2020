@@ -1,0 +1,12 @@
+import "base.proto";
+import "articles_base.proto";
+
+import "kwtypes_base.proto";
+
+message person_name : TAuxDicArticle {}
+
+message person_surname : TAuxDicArticle {}
+
+message geo_name : TAuxDicArticle {}
+
+message geo_deskr : TAuxDicArticle {}

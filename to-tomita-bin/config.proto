@@ -1,0 +1,33 @@
+encoding "utf8";
+
+TTextMinerConfig {
+    Dictionary = "_dic.gzt";
+    Input = {
+        File = "_input"
+    }
+    Output = {
+        File = "_output"
+        Format = json
+    }
+
+    Articles = [
+        { Name = "ts_number_gram" },
+        { Name = "full_fio_gram" },
+        { Name = "fio_gram" },
+        { Name = "ip_gram" },
+        { Name = "url_gram" },
+        { Name = "bank_gram" },
+        { Name = "full_geo_gram" },
+        { Name = "geo_gram" }
+    ]
+    Facts = [
+        { Name = "ts_fact" },
+        { Name = "fio_fact" },
+        { Name = "ip_fact" },
+        { Name = "url_fact" },
+        { Name = "bank_fact" },
+        { Name = "geo_fact" }
+    ]
+
+    PrettyOutput = "_pretty.html"
+}

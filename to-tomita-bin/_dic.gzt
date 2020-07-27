@@ -1,0 +1,45 @@
+encoding "utf8";
+
+import "base.proto";
+import "articles_base.proto";
+
+import "_fact_types.proto";
+import "_kwtypes.proto";
+
+import "_person_name.gzt";
+import "_person_surname.gzt";
+import "_geo_name.gzt";
+import "_geo_deskr.gzt";
+
+TAuxDicArticle "ts_number_gram" {
+    key = { "tomita:_ts_number.cxx" type=CUSTOM }
+}
+
+TAuxDicArticle "full_fio_gram" {
+    key = { "tomita:_full_fio.cxx" type=CUSTOM }
+}
+
+TAuxDicArticle "fio_gram" {
+    key = { "tomita:_fio.cxx" type=CUSTOM }
+}
+
+TAuxDicArticle "ip_gram" {
+    key = { "tomita:_ip.cxx" type=CUSTOM }
+}
+
+TAuxDicArticle "url_gram" {
+    key = { "tomita:_url.cxx" type=CUSTOM }
+}
+
+TAuxDicArticle "bank_gram" {
+    key = { "tomita:_bank.cxx" type=CUSTOM }
+}
+
+TAuxDicArticle "geo_gram" {
+    key = { "tomita:_geo.cxx" type=CUSTOM }
+}
+
+TAuxDicArticle "full_geo_gram" {
+    key = { "tomita:_full_geo.cxx" type=CUSTOM }
+}
+

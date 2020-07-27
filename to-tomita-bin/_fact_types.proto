@@ -1,0 +1,40 @@
+import "base.proto";
+import "facttypes_base.proto";
+
+message ts_fact: NFactType.TFact {
+    required string text = 1;
+}
+
+message fio_fact: NFactType.TFact {
+    required string text = 1;
+    optional string name = 2 [(NFactType.normcase) = TITLE_CASE];
+    optional string surname = 3 [(NFactType.normcase) = TITLE_CASE];
+    optional string middle_name = 4 [(NFactType.normcase) = TITLE_CASE];
+    optional string normal_name = 5 [(NFactType.normcase) = TITLE_CASE];
+    optional string normal_surname = 6 [(NFactType.normcase) = TITLE_CASE];
+    optional string normal_middle_name = 7 [(NFactType.normcase) = TITLE_CASE];
+}
+
+message ip_fact: NFactType.TFact {
+    required string text = 1;
+    optional string ip = 2;
+    optional string port = 3;
+    required string type = 4 [ default = "IPv4"];
+}
+
+message url_fact: NFactType.TFact {
+    required string text = 1;
+}
+
+message bank_fact: NFactType.TFact {
+    required string text = 1;
+    optional string bik = 2;
+    optional string corresp = 3;
+    optional string inn = 4;
+    optional string ras = 5;
+}
+
+message geo_fact: NFactType.TFact {
+    required string text = 1;
+    required string normal = 2;
+}
